@@ -1,20 +1,19 @@
+:root {
+  --primary-color: #02280e;
+}
+
 * {
   margin: 0;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(2, 40, 17);
+  background-color: var(--primary-color);
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 header {
@@ -26,11 +25,6 @@ header {
   color: #fff;
   padding: 200px 0;
   text-align: center;
-}
-
-section {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 h1 {
@@ -54,21 +48,106 @@ header p {
   letter-spacing: 5px;
 }
 
-header a {
-  text-decoration: none;
+main {
+  background: #fff;
+  color: var(--primary-color);
 }
 
-.primary-link {
+main h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+main h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main h4 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+section {
+  margin: 0 auto;
+  padding: 100px;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.link {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #272044;
-  background: #fff;
   display: inline-block;
   padding: 16px 32px;
   margin-top: 32px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.primary-link {
+  color: var(--primary-color);
+  background: #fff;
+}
+
+.secondary-link {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 30px;
 }
 
 footer {
@@ -78,57 +157,54 @@ footer {
   background-size: cover;
   background-position: center;
   color: #fff;
-  padding: 100px 0;
 }
 
-h3 {
+footer h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-ul {
+footer ul {
   padding: 0;
   list-style: none;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 60px;
-}
-
-.footer-grid li,
-.footer-grid p {
+footer li,
+footer p {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.7;
 }
 
-.footer-grid a {
+footer a {
   color: #fff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 80px 0;
   }
 
   h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
-  header h2 {
-    font-size: 20px;
+  header h2,
+  main h3 {
+    font-size: 28px;
   }
 
-  header p {
-    font-size: 12px;
+  p {
+    font-size: 16px;
   }
 
-  .footer-grid {
+  section {
+    padding: 70px 30px;
+  }
+
+  .grid {
     grid-template-columns: 1fr;
-    padding: 0 40px;
     grid-gap: 30px;
   }
 }
