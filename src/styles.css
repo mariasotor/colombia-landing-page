@@ -92,12 +92,10 @@ section.secondary {
 img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
 }
 
-.embed {
-  width: 100%;
-  aspect-ratio: 16 / 9;
+.rounded {
+  border-radius: 4px;
 }
 
 .link {
@@ -143,11 +141,23 @@ img {
 
 .card {
   background: #fff;
-  border-radius: 10px;
+}
+
+.card-header.grid-2-col {
+  grid-gap: 0;
+}
+
+.card-header img {
+  aspect-ratio: 1/1;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .card-body {
-  padding: 30px;
+  padding: 20px;
 }
 
 footer {
@@ -206,5 +216,17 @@ footer a {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 30px;
+  }
+
+  .card {
+    margin-top: 40px;
+  }
+
+  .card-header img {
+    aspect-ratio: auto;
+  }
+
+  .embed {
+    display: none;
   }
 }
