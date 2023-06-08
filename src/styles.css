@@ -4,7 +4,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #272044;
+  background-color: rgb(2, 40, 17);
 }
 
 .container {
@@ -18,7 +18,7 @@ img {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(2, 40, 17, 0.6), rgba(2, 40, 17, 0.6)),
     url("../images/background-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,6 +26,11 @@ header {
   color: #fff;
   padding: 200px 0;
   text-align: center;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -49,7 +54,7 @@ header p {
   letter-spacing: 5px;
 }
 
-a {
+header a {
   text-decoration: none;
 }
 
@@ -64,6 +69,44 @@ a {
   display: inline-block;
   padding: 16px 32px;
   margin-top: 32px;
+}
+
+footer {
+  background-image: linear-gradient(rgb(2, 40, 17, 0.9), rgb(2, 40, 17, 0.9)),
+    url("../images/background-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+}
+
+.footer-grid li,
+.footer-grid p {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.footer-grid a {
+  color: #fff;
 }
 
 @media (max-width: 900px) {
@@ -81,5 +124,11 @@ a {
 
   header p {
     font-size: 12px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 0 40px;
+    grid-gap: 30px;
   }
 }
