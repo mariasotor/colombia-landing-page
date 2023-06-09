@@ -11,11 +11,6 @@ body {
   background-color: var(--primary-color);
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 header {
   background-image: linear-gradient(rgba(2, 40, 17, 0.6), rgba(2, 40, 17, 0.6)),
     url("../images/background-hero.jpg");
@@ -94,11 +89,16 @@ img {
   height: auto;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .rounded {
   border-radius: 4px;
 }
 
-.link {
+.link-btn {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
