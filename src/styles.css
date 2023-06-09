@@ -64,7 +64,7 @@ main h2 {
 main h3 {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 main h4 {
@@ -75,7 +75,7 @@ main h4 {
 }
 
 main p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 2;
   font-weight: 400;
 }
@@ -136,7 +136,11 @@ img {
 
 .grid-3-col {
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  column-gap: 40px;
+}
+
+.grid-2-row {
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .grid-3-col-first-narrow {
@@ -149,6 +153,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 20px;
   border-radius: 10px;
 }
 
@@ -174,6 +179,13 @@ img {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 0 10px 0 0;
+}
+
+.gallery-section {
+  background: #f8f8f8;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 footer {
