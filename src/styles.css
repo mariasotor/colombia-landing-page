@@ -64,7 +64,7 @@ main h2 {
 main h3 {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 main h4 {
@@ -136,28 +136,44 @@ img {
 
 .grid-3-col {
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.grid-3-col-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 60px;
 }
 
 .card {
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
 }
 
 .card-header.grid-2-col {
   grid-gap: 0;
 }
 
+.card-body,
+.card-footer {
+  padding: 20px;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
 .card-header img {
   aspect-ratio: 1/1;
+  border-radius: 10px 0 0 0;
 }
 
 .embed {
   width: 100%;
   aspect-ratio: 1/1;
-}
-
-.card-body {
-  padding: 20px;
+  border-radius: 0 10px 0 0;
 }
 
 footer {
@@ -224,6 +240,7 @@ footer a {
 
   .card-header img {
     aspect-ratio: auto;
+    border-radius: 10px 10px 0 0;
   }
 
   .embed {
